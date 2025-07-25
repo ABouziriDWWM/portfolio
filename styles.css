@@ -727,12 +727,20 @@ section {
 }
 
 /* Contact Section */
-.contact-content {
+/* .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   max-width: 1000px;
   margin: 0 auto;
+} */
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Pour centrer aussi verticalement, sinon retire cette ligne */
+  flex-direction: column;
+  min-height: 250px; /* Ajuste selon la hauteur souhaitée */
 }
 
 .contact-info {
