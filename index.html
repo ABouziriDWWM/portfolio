@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOUZIRI AMINE - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("TON_USER_ID"); // Remplace par ton vrai User ID EmailJS
+    })();
+</script>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">BOUZIRI AMINE</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#experience" class="nav-link">Expérience</a>
+                <a href="#education" class="nav-link">Formation</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Bonjour, je suis</span><br>
+                        <span class="name-highlight">BOUZIRI AMINE</span>
+                    </h1>
+                    <p class="hero-subtitle">Développeur web et web mobile sécurisés</p>
+                    <p class="hero-description">
+                        Passionné par le développement web moderne, je crée des applications
+                        web et mobiles sécurisées avec les dernières technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="amine.jpg" alt="Photo de profil"
+                                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-subtitle">Découvrez mon parcours et mes passions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Développeur web passionné avec une expertise en développement frontend et backend.
+                        Je me spécialise dans la création d'applications web et mobiles sécurisées en utilisant
+                        les technologies modernes.
+                    </p>
+                    <p>
+                        Mon expérience inclut le développement de systèmes de scoring pour le Taekwondo et
+                        l'organisation d'événements sportifs. Je maîtrise plusieurs langages de programmation
+                        et frameworks, avec un focus particulier sur la sécurité et l'expérience utilisateur.
+                    </p>
+                    <div class="languages">
+                        <h3>Langues</h3>
+                        <div class="language-list">
+                            <span class="language-item">
+                                <i class="fas fa-globe"></i>
+                                Français (Langue maternelle)
+                            </span>
+                            <span class="language-item">
+                                <i class="fas fa-globe"></i>
+                                Arabe (Langue maternelle)
+                            </span>
+                            <span class="language-item">
+                                <i class="fas fa-globe"></i>
+                                Anglais (Courant)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://github.com/ABouziriDWWM" target="_blank" class="btn btn-github">
+                            <i class="fab fa-github"></i>
+                            Voir mon GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences</h2>
+                <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Base de données & Outils</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VB/VBA</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Méthodologies</h3>
+                    <div class="methodology-tags">
+                        <span class="tag">UX/UI Design</span>
+                        <span class="tag">Wireframing</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">Pattern Design</span>
+                        <span class="tag">UML</span>
+                        <span class="tag">BDD</span>
+                        <span class="tag">TDD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expérience</h2>
+                <p class="section-subtitle">Mon parcours professionnel</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Juillet-Août 2021</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Développeur</h3>
+                        <h4>Système de Scoring Taekwondo</h4>
+                        <p>
+                            Développement d'un logiciel de scoring pour le Taekwondo en utilisant VB.NET.
+                            Création d'un système de tirage au sort dirigé via VBA Excel.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">VB.NET</span>
+                            <span class="tech-tag">VBA</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Juillet-Août 2018</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Développeur</h3>
+                        <h4>Système de Scoring Taekwondo</h4>
+                        <p>
+                            Participation au développement initial du système de scoring pour les compétitions
+                            de Taekwondo, incluant la gestion des scores et des participants.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">VB</span>
+                            <span class="tech-tag">VBA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Juillet-Août 2017</div>
+                    <div class="timeline-content">
+                        <h3>Organisateur d'Événements</h3>
+                        <h4>Rencontres Sportives d'Arts Martiaux</h4>
+                        <p>
+                            Participation à l'organisation de rencontres sportives d'arts martiaux,
+                            coordination des événements et gestion logistique.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Organisation</span>
+                            <span class="tech-tag">Coordination</span>
+                            <span class="tech-tag">Logistique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formation</h2>
+                <p class="section-subtitle">Mon parcours académique</p>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-year">2025 - 2026</div>
+                    <div class="education-details">
+                        <h3>Formation Développement Web et Web Mobile</h3>
+                        <h4>Nepsod Echirolles</h4>
+                        <p>
+                            Formation spécialisée en développement web et mobile, couvrant les technologies
+                            modernes du frontend et backend, ainsi que les bonnes pratiques de sécurité.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2018 - 2023</div>
+                    <div class="education-details">
+                        <h3>Institut d'Informatique</h3>
+                        <h4>UCA-ISIMA</h4>
+                        <p>
+                            Formation en informatique avec une spécialisation en développement logiciel,
+                            algorithmique et systèmes d'information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets</h2>
+                <p class="section-subtitle">Découvrez mes réalisations</p>
+            </div>
+            <div class="projects-content">
+                <div class="github-showcase">
+                    <div class="github-card">
+                        <div class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Mes Projets GitHub</h3>
+                        <p>
+                            Explorez tous mes projets de développement web et mobile sur GitHub.
+                            Vous y trouverez des applications complètes, des composants réutilisables
+                            et des expérimentations avec les dernières technologies.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-code"></i>
+                                <span>Projets variés</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>Code de qualité</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Technologies modernes</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/ABouziriDWWM" target="_blank" class="btn btn-github-large">
+                            <i class="fab fa-github"></i>
+                            Voir tous mes projets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Restons en contact</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+33 6 69 08 20 19</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>a.bouziri.dwwm@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/ABouziriDWWM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 BOUZIRI AMINE. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/ABouziriDWWM" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:a.bouziri.dwwm@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+33669082019">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
