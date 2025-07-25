@@ -1,6 +1,8 @@
 # Portfolio BOUZIRI AMINE
 
 Site web portfolio personnel développé en HTML, CSS et JavaScript pur.
+le site:
+https://portfolio-bouziri.netlify.app/
 
 ## Description
 
