@@ -990,6 +990,10 @@ section {
   .language-list {
     flex-direction: column;
   }
+
+  .timeline-date {
+    text-align: center;
+  }
 }
 
 /* Animations d'entrée */
