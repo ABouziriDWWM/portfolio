@@ -965,7 +965,7 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .container {
     padding: 0 15px;
   }
