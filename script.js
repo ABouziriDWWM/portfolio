@@ -496,3 +496,48 @@ if ("IntersectionObserver" in window) {
     imageObserver.observe(img);
   });
 }
+
+// @@
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  let zindex = 10;
+
+  // Get all elements with class 'card'
+  const cards = document.querySelectorAll("div.card");
+  const cardsContainer = document.querySelector("div.cards");
+
+  // Add event listener to each card
+  cards.forEach((card) => {
+    card.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      let isShowing = card.classList.contains("show");
+
+      if (cardsContainer.classList.contains("showing")) {
+        // a card is already in view
+        const showingCard = document.querySelector("div.card.show");
+        if (showingCard) {
+          showingCard.classList.remove("show");
+        }
+
+        if (isShowing) {
+          // this card was showing - reset the grid
+          cardsContainer.classList.remove("showing");
+        } else {
+          // this card isn't showing - get in with it
+          card.style.zIndex = zindex;
+          card.classList.add("show");
+        }
+
+        zindex++;
+      } else {
+        // no cards in view
+        cardsContainer.classList.add("showing");
+        card.style.zIndex = zindex;
+        card.classList.add("show");
+
+        zindex++;
+      }
+    });
+  });
+});
