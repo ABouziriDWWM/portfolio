@@ -1309,7 +1309,7 @@ div.card.show div.flap2 {
 }
 
 /* Responsive pour mobile */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .card__image-holder1,
   .card__image-holder2,
   .card__image-holder3 {
