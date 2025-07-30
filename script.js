@@ -496,3 +496,32 @@ if ("IntersectionObserver" in window) {
     imageObserver.observe(img);
   });
 }
+
+// @@
+// ajout cartes projets
+// Wait for the DOM to be fully loaded
+
+document.querySelectorAll(".card .toggle-info").forEach((toggle) => {
+  toggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    const card = this.closest(".card");
+    card.classList.toggle("show");
+    // Si tu utilises .cards.showing, gère ici aussi
+    card.parentElement.classList.toggle("showing");
+  });
+});
+
+// Le bouton "En savoir plus" fonctionne normalement (aucun JS à ajouter)
+// Si tu utilises href="#" pour ce bouton, ajoute ceci pour éviter le scroll en haut :
+document.querySelectorAll(".card-actions a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    if (this.getAttribute("href") === "#") {
+      e.preventDefault();
+      // // Ajoute ici ton action JS si besoin
+      // window.open(
+      //   "https://github.com/ABouziriDWWM/cash_register/blob/main/README.md",
+      //   "_blank"
+      // );
+    }
+  });
+});
