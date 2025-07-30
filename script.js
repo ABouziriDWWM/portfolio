@@ -499,7 +499,6 @@ if ("IntersectionObserver" in window) {
 
 // @@
 // ajout cartes projets
-// Wait for the DOM to be fully loaded
 
 document.querySelectorAll(".card .toggle-info").forEach((toggle) => {
   toggle.addEventListener("click", function (e) {
@@ -517,11 +516,6 @@ document.querySelectorAll(".card-actions a").forEach((link) => {
   link.addEventListener("click", function (e) {
     if (this.getAttribute("href") === "#") {
       e.preventDefault();
-      // // Ajoute ici ton action JS si besoin
-      // window.open(
-      //   "https://github.com/ABouziriDWWM/cash_register/blob/main/README.md",
-      //   "_blank"
-      // );
     }
   });
 });

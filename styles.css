@@ -39,6 +39,7 @@ body {
   padding: 0 20px;
 }
 
+/* @@ */
 /* Navigation */
 .navbar {
   position: fixed;
@@ -124,6 +125,7 @@ body {
   transition: var(--transition);
 }
 
+/* @@ */
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -315,6 +317,7 @@ body {
   transform: rotate(45deg);
 }
 
+/* @@ */
 /* Section commune */
 section {
   padding: 5rem 0;
@@ -339,6 +342,7 @@ section {
   margin: 0 auto;
 }
 
+/* @@ */
 /* About Section */
 .about {
   margin-top: 80vh;
@@ -403,6 +407,7 @@ section {
   transform: translateY(-2px);
 }
 
+/* @@ */
 /* Skills Section */
 .skills-content {
   display: grid;
@@ -443,21 +448,20 @@ section {
   color: var(--text-primary);
 }
 
-/* enlevés */
-.skill-bar {
+/* .skill-bar {
   height: 8px;
   background: var(--bg-secondary);
   border-radius: 4px;
   overflow: hidden;
-}
+} */
 
-.skill-progress {
+/* .skill-progress {
   height: 100%;
   background: var(--gradient-primary);
   border-radius: 4px;
   width: 0;
   transition: width 1s ease-in-out;
-}
+} */
 
 .methodology-tags {
   display: flex;
@@ -474,6 +478,7 @@ section {
   font-weight: 500;
 }
 
+/* @@ */
 /* Experience Section */
 .experience {
   background: var(--bg-secondary);
@@ -575,6 +580,7 @@ section {
   font-weight: 500;
 }
 
+/* @@ */
 /* Education Section */
 .education-content {
   max-width: 800px;
@@ -627,6 +633,7 @@ section {
   line-height: 1.6;
 }
 
+/* @@ */
 /* Projects Section */
 .projects {
   background: var(--bg-secondary);
@@ -730,15 +737,8 @@ section {
   color: var(--primary-color);
 }
 
-/* Contact Section */
-/* .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  max-width: 1000px;
-  margin: 0 auto;
-} */
-
+/* @@ */
+/* contact */
 .contact {
   margin-top: 10vh;
 }
@@ -829,6 +829,7 @@ section {
   min-height: 120px;
 }
 
+/* @@ */
 /* Footer */
 .footer {
   background: var(--text-primary);
@@ -845,6 +846,8 @@ section {
   gap: 1rem;
 }
 
+/* @@ */
+/* reseaux sociaux footer */
 .social-links {
   display: flex;
   gap: 1rem;
@@ -868,6 +871,7 @@ section {
   transform: translateY(-2px);
 }
 
+/* @@ */
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
@@ -1001,6 +1005,7 @@ section {
   }
 }
 
+/* @@ */
 /* Animations d'entrée */
 .fade-in {
   opacity: 0;
@@ -1078,12 +1083,7 @@ section {
     format("truetype");
 }
 
-.cards h1 {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 0 0 20px;
-}
-
+/* @@ */
 a.botn {
   background: var(--primary-color);
   border-radius: 4px;
@@ -1109,6 +1109,14 @@ a.botn:active {
   transition: all 0.025s 0s ease-out;
 }
 
+/* @@ */
+/* réglage des cartes des projets */
+.cards h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
 div.cards {
   margin: 80px auto;
   max-width: 960px;
@@ -1129,11 +1137,7 @@ div.card {
 div.card img {
   max-width: 300px;
 }
-/* div.card .card__image-holder {
-  background: rgba(0, 0, 0, 0.1);
-   height: 0; 
-  padding-bottom: 75%;
-} */
+
 div.card div.card-title {
   background: #ffffff;
   padding: 6px 15px 10px;
@@ -1240,8 +1244,14 @@ div.card.show div.flap2 {
   transition: all 0.3s 0.2s ease-out;
 }
 
+@media (max-width: 1000px) {
+  .toggle-info.botn {
+    display: none;
+  }
+}
+
 /* @@ */
-/* ajustement */
+/* ajustement images projects */
 
 .card__image-holder1,
 .card__image-holder2,
@@ -1288,8 +1298,6 @@ div.card.show div.flap2 {
   .card__image-holder1,
   .card__image-holder2,
   .card__image-holder3 {
-    height: 180px; /* Increased height for mobile */
-    min-height: 180px;
     background-size: cover;
   }
   div.card {
