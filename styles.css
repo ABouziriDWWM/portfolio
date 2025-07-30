@@ -1251,7 +1251,7 @@ div.card.show div.flap2 {
 }
 
 /* @@ */
-/* ajustement images projects */
+/* adjustment images of projects */
 
 .card__image-holder1,
 .card__image-holder2,
@@ -1266,8 +1266,7 @@ div.card.show div.flap2 {
   overflow: hidden;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  /* background: #f7f7f7; */
-  background-size: contain; /* Remplace contain par cover */
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
