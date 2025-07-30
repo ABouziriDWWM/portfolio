@@ -1306,8 +1306,22 @@ div.card.show div.flap2 {
 
 /* Responsive pour mobile */
 @media (max-width: 600px) {
-  .card__image-holder {
-    height: 120px;
+  .card__image-holder1,
+  .card__image-holder2,
+  .card__image-holder3 {
+    height: 180px; /* Increased height for mobile */
+    min-height: 180px;
+  }
+  div.card {
+    max-width: 98vw;
+    width: 98vw;
+  }
+  div.card div.card-flap {
+    position: static; /* Prevent absolute positioning from clipping content */
+    transform: none;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .contact {
