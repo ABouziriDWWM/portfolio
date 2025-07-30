@@ -1256,7 +1256,9 @@ div.card.show div.flap2 {
   border-top-right-radius: 16px;
   /* background: #f7f7f7; */
   background-image: url(/Cash_register.webp);
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: contain; /* Remplace contain par cover */
+  background-position: center;
 
   background-repeat: no-repeat;
 }
@@ -1275,6 +1277,7 @@ div.card.show div.flap2 {
   /* background: #f7f7f7; */
   background-image: url(/Mood_tracker.png);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -1292,6 +1295,7 @@ div.card.show div.flap2 {
   /* background: #f7f7f7; */
   background-image: url(/Inventory.png);
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -1311,6 +1315,7 @@ div.card.show div.flap2 {
   .card__image-holder3 {
     height: 180px; /* Increased height for mobile */
     min-height: 180px;
+    background-size: cover;
   }
   div.card {
     max-width: 98vw;
