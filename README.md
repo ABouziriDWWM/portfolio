@@ -13,9 +13,7 @@ Ce portfolio présente les compétences, l'expérience et les projets de BOUZIRI
 - **Design responsive** : Compatible desktop et mobile
 - **Navigation fluide** : Menu de navigation avec smooth scrolling
 - **Animations CSS** : Effets visuels et transitions
-- **Barres de progression animées** : Pour les compétences techniques
 - **Intégration GitHub** : Liens vers les projets GitHub
-- **Formulaire de contact** : Avec ouverture automatique du client mail
 - **Timeline interactive** : Pour l'expérience professionnelle
 
 ## Sections
